@@ -10,6 +10,17 @@ header{
     background-color: #1abc9c;
 }
 
+.grayish-blue{
+    background-color: #3a546d;
+}
 .jumbotron{
     height: 460px;
+}
+
+.debug{
+    height: 380px;
+}
+
+.debug-xs{
+    height: 80px;
 }
