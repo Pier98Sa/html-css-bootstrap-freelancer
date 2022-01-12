@@ -10,15 +10,19 @@
 .ms_bg_grayish-blue{
     background-color: #3a546d;
 }
+/*colori del testo*/
 
-/*regole di debug*/
+.ms_text-grey{
+    color: #333333;
+}
+/*regole di debug
 .ms_debug{
     height: 380px;
 }
 
 .ms_debug-xs{
     height: 80px;
-}
+}*/
 
 /*regole dell'header*/
 .ms_nav-link{
@@ -70,14 +74,46 @@
 
 /*regole del portfolio*/
 
-/*regole del portfolio*/
+ /*regole per le barre ai lati della stella*/
+ .ms_star-grey::after{
+    content: "";
+    height: 3px;
+    width: 60px;
+    background-color: #333333;
+    position: absolute;
+    bottom: 16px;
+    transform: translate(14%); 
+    border-radius: 2px;
+}
+
+.ms_star-grey::before{
+    content: "";
+    height: 3px;
+    width: 60px;
+    background-color: #333333;
+    position: absolute;
+    bottom: 16px;
+    transform: translate(-114%); 
+    border-radius: 2px;
+}
 
 /*regole dell'about*/
-#about{
-    height: 460px;
-}
-/*regole contact*/
 
+/*regole contact*/
+.form-control::placeholder { 
+    color: #333333;
+    opacity: 1; 
+}
+
+.btn-sample { 
+    color: #ffffff; 
+    background-color: #1abc9c; 
+  } 
+
+.btn-sample:hover { 
+    background-color: #075E4D;
+    color: #fff;
+} 
 /*regole del footer*/
 
 
