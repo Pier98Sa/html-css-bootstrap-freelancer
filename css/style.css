@@ -115,5 +115,14 @@
     color: #fff;
 } 
 /*regole del footer*/
+.ms_link{
+    text-decoration: none;
+    color: #1abc9c;
+}
 
+.ms_link:hover{
+    color: #1abc9c;
+    opacity: 0.5;
+    text-decoration: underline;
+}
 
