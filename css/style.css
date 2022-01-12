@@ -36,9 +36,38 @@
 
 /*regole del jumbotron*/
 #jumbotron{
-    padding-top: 150px;
-    height: 460px;
+    padding-top: 100px;
+    padding-bottom: 25px;
 }
+
+.ms_resize{
+    height: 250px;
+}
+
+
+i::after{
+    content: "";
+    height: 3px;
+    width: 60px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 16px;
+    transform: translate(14%); 
+    border-radius: 2px;
+}
+/*
+i::before{
+    content: "";
+    height: 3px;
+    width: 60px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 16px;
+    transform: translate(14%); 
+    border-radius: 2px;
+}
+*/
+
 /*regole del portfolio*/
 
 /*regole del portfolio*/
