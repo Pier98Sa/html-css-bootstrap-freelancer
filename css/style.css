@@ -1,26 +1,28 @@
-header{
-    height: 80px;
-}
 
-.dark-blue{
+.ms_bg_dark-blue{
     background-color: #2c3e50;
 }
 
-.light-sea-green{
+.ms_bg_light-sea-green{
     background-color: #1abc9c;
 }
 
-.grayish-blue{
+.ms_bg_grayish-blue{
     background-color: #3a546d;
 }
-.jumbotron{
+#jumbotron{
+    padding-top: 150px;
     height: 460px;
 }
 
-.debug{
+#about{
+    height: 460px;
+}
+
+.ms_debug{
     height: 380px;
 }
 
-.debug-xs{
+.ms_debug-xs{
     height: 80px;
 }
