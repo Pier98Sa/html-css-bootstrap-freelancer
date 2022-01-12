@@ -44,29 +44,29 @@
     height: 250px;
 }
 
+ /*regole per le barre ai lati della stella*/
+.ms_star::after{
+    content: "";
+    height: 3px;
+    width: 60px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 16px;
+    transform: translate(14%); 
+    border-radius: 2px;
+}
 
-i::after{
+.ms_star::before{
     content: "";
     height: 3px;
     width: 60px;
     background-color: #fff;
     position: absolute;
     bottom: 16px;
-    transform: translate(14%); 
+    transform: translate(-114%); 
     border-radius: 2px;
 }
-/*
-i::before{
-    content: "";
-    height: 3px;
-    width: 60px;
-    background-color: #fff;
-    position: absolute;
-    bottom: 16px;
-    transform: translate(14%); 
-    border-radius: 2px;
-}
-*/
+
 
 /*regole del portfolio*/
 
