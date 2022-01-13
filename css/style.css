@@ -15,26 +15,56 @@
 .ms_text-grey{
     color: #333333;
 }
-/*regole di debug
-.ms_debug{
-    height: 380px;
+
+/*regole per le stelle*/
+
+.ms_star,
+.ms_star-grey{
+    font-size: 30px;
+}
+ .ms_star .bi-star-fill,
+ .ms_star-grey .bi-star-fill{
+    width: 5%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.ms_debug-xs{
-    height: 80px;
-}*/
+/*stelle bianche*/
+.ms_star::after,
+.ms_star::before{
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 10%;
+    background-color: #fff;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+/*stelle grigie*/
+
+.ms_star-grey::after,
+.ms_star-grey::before{
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 10%;
+    background-color: #333333;
+    border-radius: 4px;
+    vertical-align: middle;
+}
 
 /*regole dell'header*/
 .ms_nav-link{
     display: block;
-  padding: 0.5rem 1rem;
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; 
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out; 
 }
 
 .ms_nav-link:hover{
-    color: #1abc9c;
+    color: #1abc9c ;
 }
 /*regole del main*/
 
@@ -44,69 +74,47 @@
     padding-bottom: 25px;
 }
 
-.ms_resize{
-    height: 250px;
-}
-
- /*regole per le barre ai lati della stella*/
-.ms_star::after{
-    content: "";
-    height: 3px;
-    width: 60px;
-    background-color: #fff;
-    position: absolute;
-    bottom: 16px;
-    transform: translate(14%); 
-    border-radius: 2px;
-}
-
-.ms_star::before{
-    content: "";
-    height: 3px;
-    width: 60px;
-    background-color: #fff;
-    position: absolute;
-    bottom: 16px;
-    transform: translate(-114%); 
-    border-radius: 2px;
+.ms_resize-img-jumbotron{
+    max-width: 250px;
 }
 
 
 /*regole del portfolio*/
-
- /*regole per le barre ai lati della stella*/
- .ms_star-grey::after{
-    content: "";
-    height: 3px;
-    width: 60px;
-    background-color: #333333;
-    position: absolute;
-    bottom: 16px;
-    transform: translate(14%); 
-    border-radius: 2px;
+.ms_portfolio_item{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.ms_star-grey::before{
-    content: "";
-    height: 3px;
-    width: 60px;
-    background-color: #333333;
+.ms_layover{
+    display: none;
     position: absolute;
-    bottom: 16px;
-    transform: translate(-114%); 
-    border-radius: 2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, 0.75);
+}
+
+.ms_layover .bi-plus{
+    color: #fff;
+    font-size: 100px;
+}
+
+.ms_portfolio_item:hover .ms_layover{
+    display: flex;
 }
 
 /*regole dell'about*/
 
 /*regole contact*/
-.form-control::placeholder { 
+#contact .form-control::placeholder {
+    font-size: 20px; 
     color: #333333;
-    opacity: 1; 
 }
 
 .btn-sample { 
-    color: #ffffff; 
+    color: #fff; 
     background-color: #1abc9c; 
   } 
 
